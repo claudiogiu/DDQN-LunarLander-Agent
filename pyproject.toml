@@ -1,0 +1,10 @@
+[project]
+name = "DDQN-LunarLander-Agent"
+version = "0.1.0"
+description = "Double Deep Q‑Network implementation with experience replay, target‑network stabilization, and episodic training on the Gymnasium LunarLander environment."
+requires-python = ">=3.12"
+dependencies = [
+    "torch==2.11.0",
+    "gymnasium[box2d]==1.2.3",
+    "numpy==2.4.3"
+]
