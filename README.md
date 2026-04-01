@@ -2,8 +2,7 @@
 
 ## Introduction  
 
-This repository is designed for training a Double Deep Q‑Network (DDQN) agent on the Gymnasium LunarLander environment.  
-The implemented methodology corresponds to the Double Q‑learning formulation extended to deep neural function approximators, originally introduced by VAN HASSELT H., GUEZ A., and SILVER D. (2016) in their paper *“Deep Reinforcement Learning with Double Q‑learning”* (Proceedings of the AAAI Conference on Artificial Intelligence, 30(1), DOI: [10.1609/aaai.v30i1.10295](https://doi.org/10.1609/aaai.v30i1.10295)).
+This repository is designed for training a Double Deep Q‑Network (DDQN) agent on the Gymnasium LunarLander environment. The implemented methodology corresponds to the Double Q‑learning formulation extended to deep neural function approximators, originally introduced by VAN HASSELT H., GUEZ A., and SILVER D. (2016) in their paper *“Deep Reinforcement Learning with Double Q‑learning”* (Proceedings of the AAAI Conference on Artificial Intelligence, 30(1), DOI: [10.1609/aaai.v30i1.10295](https://doi.org/10.1609/aaai.v30i1.10295)).
 
 A DDQN is a value‑based reinforcement‑learning model that mitigates the overestimation bias inherent in standard Deep Q‑Networks by decoupling action selection from action evaluation. The online network identifies the greedy action, while the target network evaluates its expected return, ensuring more stable temporal‑difference targets and enabling the emergence of a reliable control policy for the LunarLander environment.
 
