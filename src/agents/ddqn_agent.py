@@ -98,7 +98,6 @@ class DDQNAgent(BaseAgent):
         self.memory = ReplayBuffer(buffer_size)
         self._t_step = 0
 
-
     def act(self, state: np.ndarray, eps: float = None) -> int:
         if eps is None:
             eps = self.epsilon
