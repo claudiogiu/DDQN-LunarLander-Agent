@@ -22,8 +22,7 @@ class BaseAgent(ABC):
             specified filesystem path.
 
         load(path: str) -> None:
-            Restores the agent's previously saved state from disk, enabling
-            evaluation or continuation of training.
+            Restores the agent's previously saved state from disk.
     """
 
     @abstractmethod
