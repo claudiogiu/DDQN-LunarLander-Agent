@@ -9,11 +9,11 @@ class BaseAgent(ABC):
 
     Methods:
         act(state: np.ndarray, eps: float = 0.0) -> int:
-            Returns an action given the current environment state, optionally
+            Selects an action given the current environment state, optionally
             modulated by an exploration parameter controlling stochasticity.
 
         step(state: np.ndarray, action: int, reward: float, next_state: np.ndarray, done: bool) -> None:
-            Processes a full transition tuple and updates internal learning
+            Processes a complete transition record and updates internal learning
             components such as replay buffers, target networks, or policy
             parameters.
 
