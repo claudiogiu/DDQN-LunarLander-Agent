@@ -9,8 +9,8 @@ class QNetwork(nn.Module):
 
     Methods:
         forward(x: torch.Tensor) -> torch.Tensor:
-            Computes the network's output scores for the given batch of input
-            states, returning one Q-value per available action.
+            Computes the Q-value vector for each input state in the batch,
+            returning one scalar estimate per discrete action.
     """
 
     def __init__(self, state_size: int, action_size: int) -> None:
