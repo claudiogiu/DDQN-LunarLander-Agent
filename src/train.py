@@ -18,22 +18,11 @@ class Trainer:
         state_size (int): Dimensionality of the observation vector returned by the environment.
         action_size (int): Cardinality of the discrete action space.
         agent (DDQNAgent): Deep Double Q-Network agent responsible for action selection and value-function updates.
-        results_dir (str): Absolute path to the directory where training artifacts are stored.
-        model_path (str): Destination file path for the final serialized policy.
 
     Methods:
         train() -> None:
             Executes the episodic training loop, collecting transitions,
             updating the agent, and reporting per-episode returns.
-
-        project_root() -> str:
-            Resolves the absolute path to the project root directory.
-
-        results_dir() -> str:
-            Returns the absolute path to the results directory.
-
-        model_path() -> str:
-            Returns the absolute path for storing the final trained model.
     """
 
     def __init__(
